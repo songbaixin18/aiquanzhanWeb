@@ -2,10 +2,10 @@
     <div class="footer">
         <div class="footer_desc">
             {{myselfDesc}}
-            <a target="blank" href="http://www.songbaixin.com">了解我</a>
+            <a target="blank" href="https://www.songbaixin.cn">了解我</a>
         </div>
         <div class="footer_text">
-            © 2018 <a target="_self" href="http://www.songbaixin.xin">{{webName}}</a> - 备案号：{{ICP}}
+            © 2018 <a target="_self" href="http://www.songbaixin.com">{{webName}}</a> - 备案号：{{ICP}}
         </div>
     </div>
 </template>

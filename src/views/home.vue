@@ -50,7 +50,7 @@
             }
         },
         create:function(){
-            this.getArticle("http://www.songbaixin.xin:5000/page/0/0")
+            this.getArticle("https://qzapi.songbaixin.com/page/0/0")
         },
         methods:{
             getArticle:function (url) {
