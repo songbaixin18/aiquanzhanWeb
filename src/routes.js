@@ -25,7 +25,7 @@ export default new Router({
             component:aboutPage
         },
         {
-            path:'/t',
+            path:'/link',
             component:aboutPage
         }
     ]

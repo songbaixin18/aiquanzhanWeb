@@ -102,7 +102,7 @@
             }
         },
         created: function(){
-            //在DOM加载完成后，下个tick中开始轮播
+            // 在DOM加载完成后，下个tick中开始轮播
             this.$nextTick(() => {
                 this.timer = setInterval(() => {
                     this.autoPlay()

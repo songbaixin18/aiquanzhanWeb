@@ -40,7 +40,8 @@
                     if(Seconds<10){
                         Seconds = '0' + Seconds;
                     }
-                    return this.getFullYear() + "年" + Month + "月" + Day + "日 " + Hours + "点" + Minutes + "分" + Seconds + "秒";
+                    return this.getFullYear() + "年" + Month + "月" + Day + "日 " + Hours + "点" + Minutes + "分" +
+                        Seconds + "秒";
                 };
                 let unixTimestamp = new Date( this.value ) ;
                 let commonTime = unixTimestamp.toLocaleString();

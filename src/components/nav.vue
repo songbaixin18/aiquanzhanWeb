@@ -1,7 +1,11 @@
 <template>
     <div class="nav-box">
         <p class="nav-list">
-            <router-link v-for="(navTitle,index) in navTitles" v-bind:to="navSrcs[index]" class="nav-item">{{navTitle}}</router-link>
+            <router-link v-for="(navTitle,index) in navTitles"
+                         v-bind:to="navSrcs[index]"
+                         class="nav-item">
+                {{navTitle}}
+            </router-link>
             <span id='nav-move-line'></span>
         </p>
     </div>
@@ -68,7 +72,8 @@
                     _this.navMoveLineMarginLeft = i * 100 + 'px';
                 };
                 navItems[i].onmousemove = function () {
-                    temp = isNaN(parseInt(_this.navMoveLineMarginLeft.replace("px",""))) ? 0 : parseInt(_this.navMoveLineMarginLeft.replace("px",""));
+                    temp = isNaN(parseInt(_this.navMoveLineMarginLeft.replace("px",""))) ? 0 : parseInt(
+                        _this.navMoveLineMarginLeft.replace("px",""));
                     navMoveLine.style.transition="-webkit-transform 300ms ease-out";
                     navMoveLine.style.webkitTransform="translate(" + (i * 100 - temp) +"px,0) scale(1) translateZ(0px)";
                 };

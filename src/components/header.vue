@@ -1,11 +1,16 @@
 <template>
     <div class="header">
         <div class="container">
-            <date-show v-model="inDateNum">服务器时间：</date-show>
+            <date-show v-model="inDateNum">
+                服务器时间：
+            </date-show>
             <a href="/">
-                <img class="logo" src="../assets/imgs/logotext.png">
+                <img class="logo"
+                     src="../assets/imgs/logotext.png">
             </a>
-            <nav-title :navTitles="navTitles" :navSrcs="navSrcs" :navNow="navNow"></nav-title>
+            <nav-title :navTitles="navTitles"
+                       :navSrcs="navSrcs"
+                       :navNow="navNow"></nav-title>
         </div>
     </div>
 </template>
@@ -82,14 +87,10 @@
             DateShow
         },
         methods: {
-            //获取当前服务器时间
+            // 获取当前服务器时间
             getTime: function (callback) {
                 let xhr = null;
-                if(window.XMLHttpRequest){
-                    xhr = new window.XMLHttpRequest();
-                }else{
-                    xhr = new ActiveObject("Microsoft")
-                }
+                xhr = new window.XMLHttpRequest();
                 xhr.open("get","/");
                 xhr.send(null);
                 xhr.onreadystatechange = function(){
@@ -101,7 +102,7 @@
                 }
             },
 
-            //当前页面位置
+            // 当前页面位置
             getNavNow: function () {
                 let urlHash = window.location.hash;
                 if(urlHash === "#/" || urlHash === ""){
@@ -118,15 +119,13 @@
         },
         created: function () {
             let _this = this;
-            //当前页面位置
             _this.navNow = _this.getNavNow();
-            //时区时间设置
+            // 时间设置
             _this.getTime(
                 function (ajax) {
-                    _this.inDateNum=new Date(ajax.getResponseHeader('Date')).getTime()+ 3600000 * -8;//相对为东八区
+                    _this.inDateNum=new Date(ajax.getResponseHeader('Date')).getTime();
                 }
             );
-            //时间定时器每秒刷新
             setInterval(function(){
                 _this.inDateNum += 1000;
             },1000);
