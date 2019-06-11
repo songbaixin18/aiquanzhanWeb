@@ -3,7 +3,7 @@
         <div class="content-wrap">
             <slide-show></slide-show>
             <ul class="article_ul" v-if="article_lists !== 'error'">
-                <li class="article_li" v-for="article_list in article_lists">
+                <li class="article_li" v-for="article_list in article_lists" v-bind:key="article_list.idarticle">
                     <a :href="article_list.src" class="article_thumbnail">
                         <img :src="article_list.thumbnail" :alt="article_list.description">
                     </a>
