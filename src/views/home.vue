@@ -8,10 +8,10 @@
                         <img :src="article_list.thumbnail" :alt="article_list.description">
                     </a>
                     <div class="article_list_title">
-                        <a class="article_type" href="http://www.songbaixin.xin/#/blog" v-if="article_list.type === 1">
+                        <a class="article_type" href="/#/blog" v-if="article_list.type === 1">
                             <span>文档</span>
                         </a>
-                        <a class="article_type" href="http://www.songbaixin.xin/#/file" v-if="article_list.type === 2">
+                        <a class="article_type" href="/#/file" v-if="article_list.type === 2">
                             <span>资源</span>
                         </a>
                         <a class="article_title" :href="article_list.src">
@@ -36,7 +36,9 @@
     </div>
 </template>
 <style>
+    /* 引入icon_font */
     @import "//at.alicdn.com/t/font_1040251_d9i8yescvbr.css";
+
     .content-wrap {
         margin-right: 400px;
         border: solid 1px rgba(0,0,0,0.05);

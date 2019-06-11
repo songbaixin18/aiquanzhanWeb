@@ -77,7 +77,7 @@
         data:function () {
             return {
                 navTitles:['首页', '资源', '文档', '关于', '友情链接'],
-                navSrcs:['/', '/file', '/blog', '/about', '/t'],
+                navSrcs:['/', '/file', '/blog', '/about', '/link'],
                 navNow: 0,
                 inDateNum: new Date().getTime(),
             }

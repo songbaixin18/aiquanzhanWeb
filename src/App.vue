@@ -33,9 +33,9 @@ export default {
     data: function() {
         return{
             isRouterAlive: true,
-            webName: '前端',
-            ICP: '黑ICP备123456789',
-            myselfDesc: 'Baixin Song 兴趣是最大的动力'
+            webName: '爱全栈',
+            ICP: '黑ICP备17004506号-3',
+            myselfDesc: '兴趣是最大的动力 但我反对996'
         }
     },
     methods: {

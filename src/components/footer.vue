@@ -3,17 +3,20 @@
         <div class="footer_desc">
             {{myselfDesc}}
             <a target="blank"
-               href="https://www.songbaixin.cn">
+               href="https://www.songbaixin.com/">
                 了解我
             </a>
         </div>
         <div class="footer_text">
-            © 2018
+            © 2017 - 2019
             <a target="_self"
-               href="https://www.songbaixin.com">
+               href="/">
                 {{webName}}
             </a>
-            - 备案号：{{ICP}}
+            - <a target="_self"
+                 href="http://www.miitbeian.gov.cn/">
+            备案号：{{ICP}}
+            </a>
         </div>
     </div>
 </template>
