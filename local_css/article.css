@@ -1,0 +1,53 @@
+#article-header {
+    margin-bottom: 20px;
+    padding: 25px 0;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+h1#title {
+    font-size: 26px;
+    line-height: 36px;
+}
+#meta {
+    font-size: 12px;
+    color: #999;
+}
+#meta span {
+    margin: 0 15px;
+    display: inline-block;
+}
+#type a{
+    color: #999;
+    padding: 0;
+}
+#type a:hover{
+    color: #42b983;
+}
+.content-wrap {
+    background-color: #ffffff;
+}
+#content {
+    padding: 0 10px;
+    text-align: left;
+}
+#content p{
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    text-indent: 25px;
+}
+#content h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+#content pre {
+    overflow: overlay;
+    background: #1d1d1d;
+    color: #d3d3d3;
+    font-size: 15px;
+    font-family: Microsfot JhengHei UI;
+}
+.footer{
+    margin-top: 10px;
+}

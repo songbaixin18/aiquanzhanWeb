@@ -2,6 +2,7 @@ var path = require('path');
 var glob = require('globby');
 var webpack = require('webpack');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 var Ex = require('extract-text-webpack-plugin');
 
 module.exports = [
@@ -25,7 +26,8 @@ module.exports = [
             new Ex({
                 filename: 'css/[name].css',
                 allChunks: true
-             })
+             }),
+            new CleanWebpackPlugin(),
         ],
         module: {
             rules: [
