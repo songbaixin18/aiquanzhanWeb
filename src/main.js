@@ -1,3 +1,4 @@
+import Es6Promise from 'es6-promise'
 import './assets/styles/base.css';
 import Vue from 'vue'
 import App from './App.vue'
