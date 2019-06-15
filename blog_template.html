@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="cn">
-
-
 <head>
     <link rel="apple-touch-icon" href="/favicon.ico">
     <link rel="icon" href="/favicon.ico">
@@ -18,36 +16,12 @@
     <meta name="referrer" content="no-referrer">
     <meta charset="UTF-8">
     <title>{{ info.title }} 爱全栈 黑科技</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 
 <body>
     <div id="app">
-        <div class="header">
-            <div class="container">
-                <div class="dateshow">
-                    <p>
-                        服务器时间：
-                        2019年06月12日 10点23分51秒
-                    </p>
-                </div>
-                <a href="/"><img src="./dist/imgs/logotext.png" class="logo"></a>
-                <div class="nav-box">
-                    <p class="nav-list"><a href="/#/" class="nav-item router-link-active">
-                            首页
-                        </a><a href="/#/file" class="nav-item">
-                            资源
-                        </a><a href="/#/blog" class="nav-item router-link-exact-active router-link-active">
-                            文档
-                        </a><a href="/#/about" class="nav-item">
-                            关于
-                        </a><a href="/#/t" class="nav-item">
-                            友情链接
-                        </a> <span id="nav-move-line"
-                            style="margin-left: 200px; transition: -webkit-transform 300ms ease-out 0s; transform: translate(0px, 0px) scale(1) translateZ(0px);"></span>
-                    </p>
-                </div>
-            </div>
-        </div>
+        <div id="header" class="header"></div>
         <div class="container">
             <div class="content-wrap">
                 <article id="article">
@@ -75,23 +49,13 @@
                 </article>
             </div>
         </div>
-        <div class="footer">
-            <div class="footer_desc">
-                Baixin Song 兴趣是最大的动力
-                <a target="blank" href="https://www.songbaixin.cn">
-                    了解我
-                </a></div>
-            <div class="footer_text">
-                © 2018
-                <a target="_self" href="https://www.songbaixin.com">
-                    前端
-                </a>
-                - 备案号：黑ICP备123456789
-            </div>
-        </div>
+        <div id="footer" class="footer"></div>
     </div>
-
-    <script src="/static/js/news.js"></script>
+    <script>
+        $("#header").load("./local_header.html");
+        $("#footer").load("./local_footer.html");
+    </script>
+    <!-- <script src="/static/js/news.js"></script> -->
 </body>
 
 </html>

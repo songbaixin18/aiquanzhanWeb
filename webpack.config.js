@@ -15,13 +15,17 @@ module.exports = [
         output: {
             path: path.resolve(__dirname, './dist'),//Webpack结果存储
             publicPath: '/dist/',//“publicPath”项则被许多Webpack的插件用于在生产模式和开发模式下下更新内嵌到css、html，img文件里的url值
-            filename: 'js/[name].js'
+            filename: './js/[name].js',
+            chunkFilename: './js/[name].[chunkhash:5].js'
         },
         plugins: [
             // make sure to include the plugin for the magic
             new VueLoaderPlugin(),
             //这里会按照output的路径打包到css文件夹下面对应的css的名字
-            new Ex('css/[name].css')
+            new Ex({
+                filename: 'css/[name].css',
+                allChunks: true
+             })
         ],
         module: {
             rules: [
@@ -32,7 +36,10 @@ module.exports = [
                 {
                     test: /\.js$/,
                     loader: 'babel-loader',
-                    exclude: /node_modules/
+                    exclude: /node_modules/,
+                    options:{
+                        plugins:['syntax-dynamic-import']
+                    }
                 },
                 {
                     test: /\.(png|jpg|gif|svg)$/,
