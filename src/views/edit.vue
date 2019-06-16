@@ -39,6 +39,7 @@
             type="file"
             style="display:none"
             accept="image/*"
+            name="upLoadThumbnail"
           >
           <img :src="thumbnail" id="upLoadThumbnailButton" @click="upLoadThumbnailButton">
         </div>
