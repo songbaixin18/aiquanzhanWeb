@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 const homePage = () => import(/* webpackChunkName: 'homePage' */ './views/home.vue')
 const aboutPage = () => import(/* webpackChunkName: 'aboutPage' */ './views/about.vue')
+const editPage = () => import(/* webpackChunkName: 'editPage' */ './views/edit.vue')
 
 Vue.use(Router)
 
@@ -26,6 +27,10 @@ export default new Router({
         {
             path:'/link',
             component:aboutPage
+        },
+        {
+            path:'/edit',
+            component:editPage
         }
     ]
 })
