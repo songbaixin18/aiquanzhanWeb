@@ -4,7 +4,7 @@
             <slide-show></slide-show>
             <ul class="article_ul" v-if="article_lists !== 'error'">
                 <li class="article_li" v-for="article_list in article_lists" v-bind:key="article_list.idarticle">
-                    <a :href="article_list.src" class="article_thumbnail">
+                    <a :href="article_list.src" class="article_thumbnail" target="_blank">
                         <img :src="article_list.thumbnail" :alt="article_list.description">
                     </a>
                     <div class="article_list_title">
@@ -14,7 +14,7 @@
                         <a class="article_type" href="/#/file" v-if="article_list.type === 2">
                             <span>资源</span>
                         </a>
-                        <a class="article_title" :href="article_list.src">
+                        <a class="article_title" :href="article_list.src" target="_blank">
                             <h2>{{article_list.title}}</h2>
                         </a>
                     </div>
@@ -75,7 +75,7 @@
     }
 
     .article_list_title a {
-        display: inline-block;
+        display: inline;
     }
 
     .article_list_title a:hover {
@@ -84,7 +84,7 @@
 
     .article_type span {
         position: relative;
-        display: block;
+        display: inline-block;
         top: -1px;
         width: 53px;
         height: 26px;
@@ -116,7 +116,9 @@
         -o-transition: color 0.25s;
         transition: color 0.25s;
     }
-
+    .article_title h2 {
+        display: inline;
+    }
     .article_title:hover {
         color: #42b983;
     }
