@@ -1,3 +1,13 @@
+.container-article {
+    display: flex;
+}
+
+.content-wrap {
+    background-color: #ffffff;
+    flex: 5;
+    margin: 0 0 0 20px;
+}
+
 #article-header {
     margin-bottom: 20px;
     padding: 25px 0;
@@ -27,10 +37,6 @@ h1#title {
 
 #type a:hover {
     color: #42b983;
-}
-
-.content-wrap {
-    background-color: #ffffff;
 }
 
 #content {
@@ -94,13 +100,9 @@ p.file_name {
     border-radius: 5px;
 }
 
-.content-show {
-    flex: 1;
-    padding: 10px;
-    border: solid 1px rgba(0, 0, 0, 0.05);
-    border-radius: 5px;
-    overflow: overlay;
-    display: inline-block;
+.content-right {
+    flex: 2;
+    margin: 0 20px;
 }
 
 .footer {
