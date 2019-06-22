@@ -155,4 +155,7 @@ h1#title {
     #meta span {
         display: block;
     }
+    #content img {
+        max-width: 85%;
+    }
 }
