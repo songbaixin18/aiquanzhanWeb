@@ -1,3 +1,6 @@
+body{
+    width: 100%;
+}
 .container-article {
     display: flex;
 }
@@ -138,5 +141,15 @@ h1#title {
         z-index: -1;
         margin: 0;
         box-shadow: -5px 0px 9px 0px #eeeeee;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .container-article {
+        display: block;
+    }
+    .container-article .content-wrap{
+        margin: 0;
+        padding: 0 10px;
     }
 }
