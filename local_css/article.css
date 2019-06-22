@@ -152,4 +152,7 @@ h1#title {
         margin: 0;
         padding: 0 10px;
     }
+    #meta span {
+        display: block;
+    }
 }
