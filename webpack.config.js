@@ -9,6 +9,7 @@ module.exports = [
     {
         entry: {
             'app': ['babel-polyfill','./src/main.js'],
+            'media': ['babel-polyfill','./src/media.js'],
             // 'commom':['babel-polyfill','./src/page/common/index.js'],
             // 'index':['babel-polyfill','./src/page/index/index.js'],
             // 'login':['babel-polyfill','./src/page/login/index.js']
