@@ -152,32 +152,3 @@ pre::-webkit-scrollbar-thumb {
 .footer {
     margin-top: 10px;
 }
-
-@media screen and (max-width: 1280px) {
-    .content-right {
-        display: none;
-        pointer-events: none;
-        position: fixed;
-        width: 250px;
-        height: 100%;
-        top: 0;
-        right: 0;
-        background-color: rgba(255, 255, 255, .9);
-        z-index: -1;
-        margin: 0;
-        box-shadow: -5px 0px 9px 0px #eeeeee;
-    }
-}
-
-@media screen and (max-width: 940px) {
-    .container-article {
-        display: block;
-    }
-    .container-article .content-wrap {
-        margin: 0;
-        padding: 0 10px;
-    }
-    #meta span {
-        display: block;
-    }
-}

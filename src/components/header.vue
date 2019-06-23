@@ -36,35 +36,6 @@
         float: right;
         margin: 10px 5px 10px 5px;
     }
-    @media screen and (max-width:680px){
-        .header{
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            text-align: center;
-            padding: 15px 0 !important;
-            margin-bottom: 0;
-            z-index: 9999;
-            height: 32px;
-        }
-        img.logo{
-            float: none;
-            margin-left: 0;
-            margin-top: 0;
-        }
-    }
-    @media screen and (max-width: 1020px){
-        .dateshow{
-            display: none;
-        }
-    }
-    @media screen and (min-width: 1021px) and (max-width:1235px){
-
-    }
-    @media screen and (min-width: 681px) and (max-width:1235px) {
-
-    }
 </style>
 
 <script>
