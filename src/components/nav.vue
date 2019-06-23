@@ -36,11 +36,6 @@
         top: 50px;
         width: 100px;
     }
-    @media screen and (max-width:680px){
-        .nav-box{
-            display: none;
-        }
-    }
 </style>
 
 <script>

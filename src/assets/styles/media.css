@@ -1,5 +1,7 @@
-
 @media screen and (max-width: 680px) {
+    .nav-box{
+        display: none;
+    }
     .header {
         position: fixed;
         top: 0;
