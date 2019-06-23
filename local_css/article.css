@@ -1,12 +1,10 @@
-body{
-    width: 100%;
-}
 .container-article {
     display: flex;
 }
+
 /* 让flex元素居中*/
-.container-article:before,
-.container-article:after {
+
+.container-article:before, .container-article:after {
     content: '';
     margin: auto;
 }
@@ -67,7 +65,7 @@ h1#title {
 }
 
 #content p {
-    margin: 0 0 20px 0;
+    margin: 5px 0 15px 0;
     word-wrap: break-word;
     text-indent: 25px;
 }
@@ -89,7 +87,8 @@ h1#title {
 }
 
 #content img {
-    margin: 0 auto;
+    max-width: 85%;
+    margin: 0px auto 20px auto;
     display: block;
     background-color: #fafafa;
     box-shadow: 5px 5px 20px 2px #555555;
@@ -98,12 +97,38 @@ h1#title {
 #content pre {
     width: 100%;
     padding: 10px;
+    margin: 0 0 5px 0;
     overflow: overlay;
     background-color: #1d1d1d;
     color: #d3d3d3;
     font-size: 15px;
     border-radius: 5px;
     font-family: Microsfot JhengHei UI;
+}
+
+#content code {
+    padding: 0 5px;
+    overflow: overlay;
+    background-color: #1d1d1d;
+    color: #d3d3d3;
+    font-size: 15px;
+    border-radius: 5px;
+    font-family: Microsfot JhengHei UI;
+}
+
+#content pre code {
+    padding: 0;
+}
+
+pre::-webkit-scrollbar {
+    height: 8px;
+    background-color: #444;
+    border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 4px;
 }
 
 .content-footer {
@@ -128,7 +153,7 @@ h1#title {
     margin-top: 10px;
 }
 
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1280px) {
     .content-right {
         display: none;
         pointer-events: none;
@@ -137,25 +162,22 @@ h1#title {
         height: 100%;
         top: 0;
         right: 0;
-        background-color: rgba(255,255,255,.9);
+        background-color: rgba(255, 255, 255, .9);
         z-index: -1;
         margin: 0;
         box-shadow: -5px 0px 9px 0px #eeeeee;
     }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 940px) {
     .container-article {
         display: block;
     }
-    .container-article .content-wrap{
+    .container-article .content-wrap {
         margin: 0;
         padding: 0 10px;
     }
     #meta span {
         display: block;
-    }
-    #content img {
-        max-width: 85%;
     }
 }
