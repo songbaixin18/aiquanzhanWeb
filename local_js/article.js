@@ -1,5 +1,3 @@
-import { get } from "https";
-
 $("#header").load("../local_header.html");
 $("#right").load("../local_right.html");
 $("#footer").load("../local_footer.html");
