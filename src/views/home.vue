@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="content-tent">
+    <div class="content-wrap">
       <slide-show></slide-show>
       <ul class="article_ul" v-if="article_lists !== 'error'">
         <li
@@ -54,7 +54,7 @@
   </div>
 </template>
 <style>
-.content-tent {
+.content-wrap {
   margin-right: 400px;
   border: solid 1px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
