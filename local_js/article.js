@@ -10,7 +10,7 @@ $(function () {
     $.ajax({
         url: API + "/read_number/" + src,
         success: function (result) {
-            $("#read_numder").html(result["read_number"]);
+            $("#read_numder").html("阅读数( " + JSON.parse(result).read_number + " )");
         }
     });
 })
